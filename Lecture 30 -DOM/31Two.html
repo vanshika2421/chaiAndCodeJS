@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: azure;">
+    <div class="parent"> 
+        <!-- excuse me -->
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+    <div class="day">Friday</div>
+    <div class="day">Saturday</div>
+    <div class="day">Sunday</div>
+</div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children); // -> yai ek array hai
+    // console.log(parent.children[1].innerHTML);
+    // //psrent.children jo hai -> array hai
+    // for (let i = 0; i < parent.children.length ; i++) {
+    //     //innerhtml hum uska data ya text access krne ke liye daalte hai.
+    //     const element = parent.children[i].innerHTML;
+    // }
+    parent.children[1].style.color = "orange";
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild)
+
+    const dayOne = document.querySelector('.day');
+    console.log(dayOne);
+    console.log(dayOne.parentElement)
+    console.log(dayOne.parentElementSibling) 
+    console.log("NODES:" , parent.childNodes) // child nodes sirff number of days nhi hai. they are almost doubleeee and more than that - 15 , lyunki wo text ko or div ko alg alg count kr ra hai
+</script>
+</html>
