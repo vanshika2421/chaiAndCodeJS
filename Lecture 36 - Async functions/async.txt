@@ -1,0 +1,10 @@
+           They are default           
+           javaScript
+                |
+      -----------------------
+      |                     |
+Synchronous          single threaded
+    |                      |
+continous code    ek hi thread pe sb execute hora hai. (jab tk ek kaam khtm nhi hota, dusra shuru nai hogaaa)
+execution         kabhi bhi akeli javascript run nahi kri.
+                 jaise it can run with browser or nodejs

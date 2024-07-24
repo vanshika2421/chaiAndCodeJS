@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing images</title>
+</head>
+<body style="background-color: #414141;">
+    <div>
+        <ul id="images">
+        <li><img height="100px" width="100px" id="autumn" src="https://images.pexels.com/photos/27200209/pexels-photo-27200209/free-photo-of-a-street-with-a-tree-in-bloom-and-people-walking.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+        <li><img height="100px" width="100px" id="heartcakes"  src="https://images.pexels.com/photos/14913583/pexels-photo-14913583.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+        <li><img height="100px" width="100px" id="cherries" src="https://images.pexels.com/photos/27077981/pexels-photo-27077981/free-photo-of-currants-on-a-table.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+        <li><img height="100px" width="100px" id="beautifulScenery" src="https://images.pexels.com/photos/18514152/pexels-photo-18514152/free-photo-of-trees-and-bushes-around-footpath-by-house.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+        <li><img height="100px" width="100px" id="waves" src="https://images.pexels.com/photos/21939825/pexels-photo-21939825/free-photo-of-barren-rocks-on-sea-shore-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+        <li><a style="color: aliceblue;" href="https://google.com" id ="google">google</a></li> 
+    </ul>
+    </div>
+</body>
+<script> 
+/* this is nice approch but doesnit give us many options
+    document.getElementById('autumn').onclick = function () {
+        alert("pat jhad ka mausam");
+    } */
+
+//     document.getElementById('images').addEventListener('click' , function(e) {
+//     // alert('pat jhad ka mausam');
+//     console.log("clicked inside the url");
+//    } , false )
+
+//    document.getElementById('autumn').addEventListener('click' , function(e) {
+//     // alert('pat jhad ka mausam');
+    
+//     console.log("pat jhad ka mausam ");
+//     e.stopPropagation(); //ab iske baad ul wali line print nahi hogi. mtlb its a break k yahi rukjao uor niche ke enets print mat kroo..  
+//    } , true)
+//    // this falser and true is event propgation.
+// //    what is this ?? -> BUBBling events. // jo chiz tumhe pehle console krvani hai uspe click krdo.
+//    document.getElementById('google').addEventListener('click', function(e){
+//     e.preventDefault();
+//     e.stopPropagation();
+//     console.log("google clicked"); 
+//    }, false) 
+    
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.targetNode.parentNode);
+        const removing = e.target.parentNode;
+        removing.remove();
+        removing.parentNode.removeChild(removing);
+    })
+
+
+   /*
+   what to learn ?
+   1. types -> keyboard , mouse.
+   2. timestamps -> date activies kaise chnge krte hai.
+   3. default prevented -> 
+   4. target 
+   5. toElement
+   6. srcElement
+   7. current Target. 
+   8. client x client y screenX screenY
+   9. altkey ctrlkey shiftkey keycode
+   */
+</script>
+</html>
