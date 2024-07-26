@@ -15,6 +15,14 @@ Synchronous -> block the flow of the code also called blocking code. ( READ FILE
 Asynchronous -> Doesnot clock the flow of the code.
 
 
+....*******....
+
 go to image.png
 
+
+what is ??
+web api -> browser mai milti hai.yai ek enviorment hota hai. or node. (dom doesnot present)
+task queue -> task queue make JS fast.
+
+-----------------------
 
