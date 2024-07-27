@@ -1,0 +1,3 @@
+promises object represents the eventual completion or a failure of an asynchronous operation and its resulting value.
+
+ promises

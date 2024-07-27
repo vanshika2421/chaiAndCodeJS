@@ -1,0 +1,10 @@
+API -> it is inter connecting language between two systems. 
+  |
+Application programming interface
+
+-----------------------------------------------
+
+V8 engine :
+console.log() -> this is not a part of core javascript. this is runtime enviorment part.
+
+github mai v8 engine mai d8 folder mai jaake pick console and get all the apis and code for console.log

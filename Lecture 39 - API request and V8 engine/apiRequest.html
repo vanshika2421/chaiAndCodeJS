@@ -1,0 +1,40 @@
+<!-- 
+ 
+* we are not leanign to fecth api here.
+* we are here to learn ancient concept of javascript api which is XML request api fetching.
+* it is very powerful api fetching tool used before.
+
+* You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing.
+
+EventTarget <- XMLHttpRequestEventTarget <- XMLHttpRequest
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body > 
+    * You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing.
+</body>
+<script>
+    let requestAPI = 'https://api.github.com/users/vanshika2421';
+    const xhr = new XMLHttpRequest(); // isme new ka kaam hai k hum kuch nya call kr rhe hai.
+    xhr.open('get', requestAPI); // request api ko fetch kiyaaaa.
+    console.log("here");
+    // xhr.onreadystatechange = function(){ // onreadyState likha jata hai btane ke liye k tum kya krogeee that is function
+        console.log(xhr.readyState);
+        if(xhr.readyState == 4){
+            const data = JSON.parse(this.responseText); // parse kya krta hai -> json ko string mai convert krdeta hai.
+            console.log(data.followers); // data mai se followers ko fetch kr skte h
+        } 
+        
+    // }
+    xhr.send(); // api ko send kiya.
+
+
+</script>
+</html>
