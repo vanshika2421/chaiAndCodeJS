@@ -1,3 +1,16 @@
 promises object represents the eventual completion or a failure of an asynchronous operation and its resulting value.
 
- promises
+-> Promises ek object hai.
+-> jo btata hai hai k jo kaam bola tha wo hua k nahi.
+-> ho kya raha hai ? asynchronous operation ( mtlb code block nahi hoga. it continously works)
+-> or yai ek promise deta hai. k queu mai lg chuka hai par abhi pura nahi hoga but hojayega.
+-> just like any playlist. babbr ki playlist puri hui pr ek saal mai. not ek dum se.
+-> promise futurre mai jaake complete hote hai.
+
+A Promise is in one of these states:
+
+pending: initial state, neither fulfilled nor rejected.
+fulfilled: meaning that the operation was completed successfully.
+rejected: meaning that the operation failed.
+
+new keyword se apko ek nya instance mil jata hai.
