@@ -14,3 +14,9 @@ fulfilled: meaning that the operation was completed successfully.
 rejected: meaning that the operation failed.
 
 new keyword se apko ek nya instance mil jata hai.
+
+
+FETCH
+1. fetch node js mai present hai.
+2. fetch se jo bhi niklta hai wo priorityQueue mai ata hai. (FIFO);
+priorityQueue > taskQueue
